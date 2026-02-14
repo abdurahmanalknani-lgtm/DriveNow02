@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #F8FAFC;
+  color: #1E293B;
+}
+
+/* Navbar */
+nav {
+  background: #0F172A;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+}
+
+nav .logo {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #2563EB;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background: #2563EB;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+}
+
+.btn-outline {
+  display: inline-block;
+  border: 2px solid #2563EB;
+  color: #2563EB;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.btn-outline:hover {
+  background: #2563EB;
+  color: white;
+}
+
+/* Hero */
+.hero {
+  height: 80vh;
+  background: linear-gradient(rgba(15,23,42,0.6), rgba(15,23,42,0.6)),
+  url("https://images.unsplash.com/photo-1502877338535-766e1452684a");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 45px;
+}
+
+.cars {
+  padding: 60px;
+  text-align: center;
+}
+
+.cars h2 {
+  margin-bottom: 40px;
+}
+
+.car-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.car-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  padding-bottom: 20px;
+}
+
+.car-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.car-card h3 {
+  margin: 15px 0 5px;
+}
+
+.car-details {
+  display: flex;
+  gap: 60px;
+  padding: 80px 60px;
+  align-items: center;
+}
+
+.car-image img {
+  width: 500px;
+  border-radius: 12px;
+}
+
+.car-info ul {
+  margin: 20px 0;
+  line-height: 1.8;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: 600;
+  color: #2563EB;
+  margin-top: 10px;
+}
+.cart-section, .checkout {
+  padding: 80px 60px;
+  text-align: center;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
